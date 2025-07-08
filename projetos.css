@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Fira Code", monospace;
+}
+
+body {
+    background-color: black;
+    height: 100%;
+}
+
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+}
+
+.btn-contato button{
+
+    font-size: 22px;
+    font-weight: 600;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 30px;
+    cursor: pointer;
+    border: 0;
+    color: gold;
+}
+
+ input:hover{
+    box-shadow: 0px 0px 8px rgb(216, 194, 72);
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+
+.titulo {
+    color: #fff;
+    text-align: center;
+    font-size: 60px;
+    margin: 50px 0;
+}
+
+.titulo span{
+    color: gold;
+}
+
+
+
+
+header {
+    margin: 20px 4%;
+    
+    transform: scale(1.05);
+    & a{
+        color: gold;
+        text-decoration: none;
+        display: inline-block;
+        padding: 15px 25px;
+        font-weight: 600;
+        background-color: rgba(255, 255, 255, 0);
+        border-radius: 30px;
+        cursor: pointer;
+        border: 0;
+        color: gold;
+    }
+    
+    & a:hover{
+        box-shadow: 0px 0px 8px rgb(216, 194, 72);
+        transform: scale(1.05);
+        transition: 0.5s;
+    }
+    
+    & nav{
+        list-style-type: none;
+    }
+
+    & > .interface {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;    
+    }
+
+    & nav ul li{
+        display: inline-block;
+        padding: 0 40px;
+    }
+    
+    & img{
+        width: 23vh;
+    }
+}
+
+
+
+section.project{
+    padding: 10px 4%;
+    margin-top: 100px;
+
+    &.project .flex{
+        justify-content: space-around;
+        gap: 20px;
+    }
+    
+    & .img-port{
+        width: 360px;
+        height: 460px;
+        background-size: cover;
+        background-position: 100% 0%;
+        transition: 5s;
+        cursor: pointer;
+        border-radius: 2%;
+        position: relative;
+    }
+
+    & .img-port:hover{
+        background-position: 100% 100%;
+    }
+
+    & .overlay{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.491);
+        border-radius: 2%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 30px;
+        font-weight: 600;
+        color: #fff;
+        opacity: 0;
+        transition: .4s;
+    }
+
+    & .overlay:hover{
+        opacity: 1;
+    }
+}
