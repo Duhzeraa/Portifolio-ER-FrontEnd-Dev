@@ -1,0 +1,230 @@
+/* RESET E BASE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Fira Code", monospace;
+}
+
+body {
+    background-color: black;
+    height: 100%;
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-contato button {
+    font-size: 22px;
+    font-weight: 600;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 30px;
+    cursor: pointer;
+    border: 0;
+    color: gold;
+}
+
+input:hover {
+    box-shadow: 0px 0px 8px rgb(216, 194, 72);
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+.titulo {
+    color: #fff;
+    text-align: center;
+    font-size: 60px;
+    margin: 50px 0;
+}
+
+.titulo span {
+    color: gold;
+    font-weight: bold;
+}
+
+span {
+    color: gold;
+    font-weight: bold;
+}
+
+/* HEADER */
+header {
+    margin: 20px 4%;
+    transform: scale(1.05);
+}
+
+header a {
+    color: gold;
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px 25px;
+    font-weight: 600;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 30px;
+    cursor: pointer;
+    border: 0;
+}
+
+header a:hover {
+    box-shadow: 0px 0px 8px rgb(216, 194, 72);
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+header nav {
+    list-style-type: none;
+}
+
+header > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 40px;
+}
+
+header img {
+    width: 23vh;
+}
+
+
+
+/* TOPO DO SITE */
+section.topo-do-site {
+    padding: 120px 4%;
+    margin-top: 30px;
+}
+
+.topo-do-site .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo-do-site h1 {
+    font-size: 40px;
+    line-height: 40px;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 30px 0;
+}
+
+.topo-do-site h1 span {
+    color: gold;
+}
+
+.topo-do-site .txt-topo-site p {
+    color: #fff;
+    margin: 40px 0;
+    font-size: 25px;
+}
+
+.topo-do-site .img-topo-site img {
+    position: relative;
+    height: 45vh;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar {
+    0% { top: 0; }
+    100% { top: 30px; }
+}
+
+
+
+/* SKILLS */
+section.especialidades {
+    padding: 120px 4%;
+    display: flex;
+    justify-items: center;
+}
+
+.especialidades .flex {
+    gap: 60px;
+}
+
+.especialidades-box {
+    color: #fff;
+    padding: 10px;
+    border-radius: 45%;
+    margin-top: 4px;
+    transition: .2s;
+    background-color: goldenrod;
+}
+
+.especialidades-box:hover {
+    transform: scale(1.05);
+}
+
+.especialidades-box img {
+    width: 100px;
+    color: #fff;
+}
+
+.especialidades-box h3 {
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+
+
+
+/* PROJETOS */
+section.project {
+    padding: 120px 4%;
+    margin-top: 100px;
+}
+
+.project .flex {
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.project .img-port {
+    width: 360px;
+    height: 460px;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 5s;
+    cursor: pointer;
+    border-radius: 2%;
+    position: relative;
+}
+
+.project .img-port:hover {
+    background-position: 100% 100%;
+}
+
+.project .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.491);
+    border-radius: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: 600;
+    color: #fff;
+    opacity: 0;
+    transition: .4s;
+}
+
+.project .overlay:hover {
+    opacity: 1;
+}
+
+
