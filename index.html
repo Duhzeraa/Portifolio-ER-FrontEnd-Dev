@@ -5,74 +5,197 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <title>ER | Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <title>Portifolio Eduardo Ramos</title>
     <link rel="icon" href="src/images/logo.png">
     <link rel="stylesheet" href="src/styles/styles.css">
 </head>
 <body>
-
+    
     <header>
         <div class="interface">
-        
-            <nav class="menu-desktop">
+            
+            <nav>
                 <ul>
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="skills.html">Serviços</a></li>
-                    <li><a href="projetos.html">Projetos</a></li>
+                    <li><a href="#sobre-mim">Sobre Mim</a></li>
+                    <li><a href="#hardskills">Hard Skills</a></li>
+                    <li><a href="#project">Projetos</a></li>
+                    <a href="#" class="btn-talk">Fale Comigo</a>
                 </ul>
             </nav>
-
-            <div class="btn-contato">
-                <a href="https://www.linkedin.com/in/eduardo-ramos-839942326/" target="_blank">
-                    <button><i class="bi bi-linkedin"></i></button>
-                </a>    
-                <a href="https://github.com/Duhzeraa" target="_blank">
-                    <button><i class="bi bi-github"></i></button>
-                </a>
-            </div>
+            
         </div>
     </header>
 
     <main>
-        <section class="topo-do-site">
-            <div class="interface">
-                <div class="flex">
-                    <div class="txt-topo-site">
-                        <h1> <span><</span> Cada linha de código é um passo rumo ao futuro <span>/> </span> </h1>
-                        <p>Me chamo <span>Eduardo Ramos</span>, tenho 21 anos, atualmente graduando 4º Periodo de Ciência da Computação.</p>
-                        <p>Apaixonado por tecnologia e desenvolvimento frontend. Sempre em busca de <span>soluções criativas e eficientes para entregar resultados reais.</span></p>
-                        <p>Se sua empresa valoriza inovação e dedicação, vamos conversar.</p>
-                    </div>
-                    <div class="img-topo-site">
-                        <img src="src/images/logo.png" alt="Image">
-                    </div>
+        <section class="home">
+            <div class="home-container">
+                <div class="home-image">
+                    <img src="src/images/eu.png" alt="Eduardo Ramos">
                 </div>
+                <h1>Eduardo Ramos</h1>
             </div>
         </section>
 
-        <section class="especialidades">
-        <div class="interface">
-            <h1 class="titulo">Linguagens</h1>
-            <div class="flex">
-               <div class="especialidades-box">
-                    <img src="src/icon/HTML5.svg" alt="HTML">           
-               </div>
-               <div class="especialidades-box">
-                    <img src="src/icon/css-3.svg" alt="CSS">
-               </div>
-               <div class="especialidades-box">
-                    <img src="src/icon/javascript.svg" alt="JavaScript">          
-               </div>
-               <div class="especialidades-box">
-                    <img src="src/icon/node-js.svg" alt="PYTHON">                   
+        <section class="topo-do-site" id="sobre-mim">
+                <div class="banner">
+                    <div class="content">
+                        <p class="greeting">Olá Mundo!</p>
+                        <h1 class="name">Sou o <span>Eduardo Ramos</span></h1>
+                        <p class="title">Desenvolvedor Full-stack</p>
+                        
+                        <div class="info-box">
+                            <div class="info-item">
+                                <span class="label"><i class="bi bi-person"></i></span>
+                                <span class="value">21 Anos</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="label"><i class="bi bi-geo-alt"></i></span>
+                                <span class="value">Uberlândia, MG</span> 
+                            </div>
+                            <div class="info-item">
+                                <span class="label"><i class="bi bi-phone"></i></span>
+                                <span class="value">+55 11 98568-4602</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="label"><i class="bi bi-envelope"></i></span>
+                                <span class="value">eduramos1133@gmail.com</span>
+                            </div>
+                        </div>
+
+                        <div class="social-links">
+                            <a href="https://github.com/Duhzeraa" class="social-icon" target="_blank"><i class="bi bi-github"></i></a>
+                            <a href="https://www.linkedin.com/in/eduramos1133/" class="social-icon" target="_blank"><i class="bi bi-linkedin"></i></a>
+                        </div>
+
+                        <div class="info-box2">
+                            <h2>Soft Skills</h2>
+                            <div class="info-item2">
+                                <span class="label2"><i class="bi bi-check2-all"></i>
+                                <span class="value2">Trabalho em Equipe</span>
+                            </div>
+                            <div class="info-item2">
+                                <span class="label2"><i class="bi bi-check2-all"></i>
+                                <span class="value2">Adaptabilidade</span>
+                            </div>
+                            <div class="info-item2">
+                                <span class="label2"><i class="bi bi-check2-all"></i>
+                                <span class="value2">Capacidade de Organização</span>
+                            </div>
+                            <div class="info-item2">
+                                <span class="label2"><i class="bi bi-check2-all"></i>
+                                <span class="value2">Comunicação Clara</span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="image-container">
+                        <img src="src/images/eu.png" alt="Image">
+                    </div>
                 </div>
+        </section>
+    
+        <section class="hardskills" id="hardskills">
+        <h2>Minhas <span>Skills</span></h2>
+        <div class="container">
+            
+            <div class="card">
+            <div class="card-content">
+                <i class="fa-brands fa-html5"></i>
+                <h3>HTML & CSS</h3>
+                <span class="badge">Intermediário</span>
+            </div>
+            <div class="card-overlay">
+                <h3>Projetos</h3>
+                <ul>
+                <li>Site Pessoal</li>
+                <li>Piano Virtual</li>
+                </ul>
             </div>
             </div>
+
+            <div class="card">
+            <div class="card-content">
+                <i class="fa-brands fa-js"></i>
+                <h3>JavaScript</h3>
+                <span class="badge">Intermediário</span>
+            </div>
+            <div class="card-overlay">
+                <h3>Projetos</h3>
+                <ul>
+                <li>Pokedex API</li>
+                <li>Jogo da Memória</li>
+                </ul>
+            </div>
+            </div>
+
+            <div class="card">
+            <div class="card-content">
+                <i class="fa-brands fa-python"></i>
+                <h3>Python</h3>
+                <span class="badge">Intermediário</span>
+            </div>
+            <div class="card-overlay">
+                <h3>Projetos</h3>
+                <ul>
+                <li>Automação de Tarefas</li>
+                <li>Análise de Dados</li>
+                </ul>
+            </div>
+            </div>
+
+            <div class="card">
+            <div class="card-content">
+                <i class="fa-solid fa-code"></i> <h3>C#</h3>
+                <span class="badge ini">Iniciante</span>
+            </div>
+            <div class="card-overlay">
+                <h3>Projetos</h3>
+                <ul>
+                <li>Sistema de Cadastro</li>
+                <li>Estudos Unity</li>
+                </ul>
+            </div>
+            </div>
+
+            <div class="card">
+            <div class="card-content">
+                <i class="fa-solid fa-database"></i>
+                <h3>SQL</h3>
+                <span class="badge ini">Iniciante</span>
+            </div>
+            <div class="card-overlay">
+                <h3>Projetos</h3>
+                <ul>
+                <li>Modelagem de Banco</li>
+                <li>Consultas Básicas</li>
+                </ul>
+            </div>
+            </div>
+
+            <div class="card">
+            <div class="card-content">
+                <i class="fa-brands fa-java"></i>
+                <h3>Java</h3>
+                <span class="badge ini">Iniciante</span>
+            </div>
+            <div class="card-overlay">
+                <h3>Projetos</h3>
+                <ul>
+                <li>API Rest Básica</li>
+                <li>POO Estudos</li>
+                </ul>
+            </div>
+            </div>
+
+        </div>
         </section>
 
-        <section class="project">
+        <section class="project" id="project">
         <div class="interface">
             <h1 class="titulo">Projetos</h1>
             <div class="flex">
@@ -88,5 +211,8 @@
             </div>
         </section>
     </main>
+
+    <script src="/src/scripts/main.js"></script>
+    <script src="/src/scripts/anima.js"></script>
 </body>
 </html>
